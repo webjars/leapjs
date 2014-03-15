@@ -12,7 +12,7 @@
 
     <groupId>org.webjars</groupId>
     <artifactId>leapjs</artifactId>
-    <version>0.4.1</version>
+    <version>0.4.1-SNAPSHOT</version>
 
     <name>LeapJS</name>
     <description>WebJar for LeapJS</description>
@@ -35,16 +35,16 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/leapmotion/leapjs</url>
-        <connection>scm:git:https://github.com/leapmotion/leapjs.git</connection>
-        <developerConnection>scm:git:https://github.com/leapmotion/leapjs.git</developerConnection>
+        <url>https://github.com/webjars/leapjs</url>
+        <connection>scm:git:https://github.com/webjars/leapjs.git</connection>
+        <developerConnection>scm:git:https://github.com/webjars/leapjs.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>v${version}</upstream.version>
-        <upstream.url>https://raw.github.com/leapmotion/leapjs/${upstream.version}</upstream.url>
+        <upstream.version>0.4.1</upstream.version>
+        <upstream.url>https://raw.github.com/leapmotion/leapjs/v${upstream.version}</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}
         </destDir>
     </properties>
@@ -101,11 +101,5 @@
                 </configuration>
             </plugin>
         </plugins>
-        <resources>
-            <resource>
-                <directory>${project.basedir}/src/main/resources</directory>
-                <targetPath>${destDir}</targetPath>
-            </resource>
-        </resources>
     </build>
 </project>
