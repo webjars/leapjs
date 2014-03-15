@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -12,7 +10,7 @@
 
     <groupId>org.webjars</groupId>
     <artifactId>leapjs</artifactId>
-    <version>0.4.1-SNAPSHOT</version>
+    <version>0.4.1</version>
 
     <name>LeapJS</name>
     <description>WebJar for LeapJS</description>
@@ -38,7 +36,7 @@
         <url>https://github.com/webjars/leapjs</url>
         <connection>scm:git:https://github.com/webjars/leapjs.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/leapjs.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>leapjs-0.4.1</tag>
     </scm>
 
     <properties>
