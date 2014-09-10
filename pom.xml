@@ -10,7 +10,7 @@
 
     <groupId>org.webjars</groupId>
     <artifactId>leapjs</artifactId>
-    <version>0.6.2-SNAPSHOT</version>
+    <version>0.6.2</version>
 
     <name>LeapJS</name>
     <description>WebJar for LeapJS</description>
@@ -36,7 +36,7 @@
         <url>https://github.com/webjars/leapjs</url>
         <connection>scm:git:https://github.com/webjars/leapjs.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/leapjs.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>leapjs-0.6.2</tag>
     </scm>
 
     <properties>
