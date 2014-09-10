@@ -10,7 +10,7 @@
 
     <groupId>org.webjars</groupId>
     <artifactId>leapjs</artifactId>
-    <version>0.4.2-SNAPSHOT</version>
+    <version>0.6.2-SNAPSHOT</version>
 
     <name>LeapJS</name>
     <description>WebJar for LeapJS</description>
@@ -41,10 +41,22 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>0.4.1</upstream.version>
-        <upstream.url>https://raw.github.com/leapmotion/leapjs/v${upstream.version}</upstream.url>
+        <upstream.version>0.6.2</upstream.version>
+        <upstream.url>https://github.com/leapmotion/leapjs/raw/v${upstream.version}</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}
         </destDir>
+        <requirejs>
+            {
+                "paths": {
+                    "leapjs": "leap"
+                },
+                "shim": {
+                    "leapjs": {
+                        "exports": "Leap"
+                    }
+                }
+            }
+        </requirejs>
     </properties>
 
     <build>
@@ -62,8 +74,8 @@
                         </goals>
                         <configuration>
                             <url>${upstream.url}</url>
-                            <fromFile>leap.js</fromFile>
-                            <toDir>${destDir}</toDir>
+                            <fromFile>leap-${upstream.version}.js</fromFile>
+                            <toFile>${destDir}/leap.js</toFile>
                         </configuration>
                     </execution>
                     <execution>
@@ -74,8 +86,8 @@
                         </goals>
                         <configuration>
                             <url>${upstream.url}</url>
-                            <fromFile>leap.min.js</fromFile>
-                            <toDir>${destDir}</toDir>
+                            <fromFile>leap-${upstream.version}.min.js</fromFile>
+                            <toFile>${destDir}/leap.min.js</toFile>
                         </configuration>
                     </execution>
                 </executions>
